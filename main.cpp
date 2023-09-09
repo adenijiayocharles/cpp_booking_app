@@ -35,6 +35,7 @@ public:
         std::cout << "=======================================" << std::endl;
         std::cout << "Enter the book details" << std::endl;
 
+        std::string ISBN;
         std::string bookName;
         std::string bookAuthor;
         double bookPrice;
@@ -42,6 +43,9 @@ public:
 
         std::cout << "Enter the book name: ";
         std::getline(std::cin, bookName);
+
+        std::cout << "Enter the book ISBN: ";
+        std::getline(std::cin, ISBN);
 
         std::cout << "Enter the author's name: ";
         std::getline(std::cin, bookAuthor);
@@ -59,6 +63,7 @@ public:
 
         if (bookFile.is_open())
         {
+            bookFile << "ISBN: " + ISBN << std::endl;
             bookFile << "Title: " + bookName << std::endl;
             bookFile << "Author: " + bookAuthor << std::endl;
             bookFile << "Price: " + std::to_string(bookPrice) << std::endl;
