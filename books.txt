@@ -1,5 +1,1 @@
-Title: Things Fall Apart
-Author: Chinua Achebe
-Price: 123.300000
-Quantity: 100
-========================
+ISBN: 9942323 - Title: Maverick - Author: Glen - Price: 89.000000 - Quantity: 34
